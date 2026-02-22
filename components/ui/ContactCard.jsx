@@ -1,7 +1,7 @@
 export default function ContactCard({ icon, label, children }) {
   return (
-    <div className="bg-navy-light border border-white/5 rounded-2xl p-6 hover:border-gold/20 transition-all">
-      <div className="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mb-4 text-gold text-xl">
+    <div className="glass-card rounded-2xl p-7 transition-all duration-500 hover:translate-y-[-4px] hover:glow-gold">
+      <div className="w-14 h-14 bg-gradient-to-br from-gold/20 to-amber/10 rounded-2xl flex items-center justify-center mb-5 text-gold text-xl">
         {icon}
       </div>
       <h3 className="text-white font-bold text-lg mb-2">{label}</h3>

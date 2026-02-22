@@ -11,10 +11,10 @@ export default function Logo({ size = 'default', showText = true, className = ''
   const s = sizes[size] || sizes.default;
 
   return (
-    <Link href="/" className={`flex items-center gap-2.5 group ${className}`} aria-label="Oz Estimations - Home">
+    <Link href="/" className={`flex items-center gap-3 group ${className}`} aria-label="Oz Estimations - Home">
       {/* Icon Mark */}
-      <div className={`${s.icon} relative flex-shrink-0`}>
-        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full group-hover:scale-110 transition-transform duration-300">
+      <div className={`${s.icon} relative flex-shrink-0 group-hover:drop-shadow-[0_0_12px_rgba(212,168,67,0.4)] transition-all duration-500`}>
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full group-hover:scale-110 transition-transform duration-500">
           {/* Background shape */}
           <rect x="2" y="2" width="56" height="56" rx="14" fill="#D4A843" />
           <rect x="2" y="2" width="56" height="56" rx="14" fill="url(#gold-gradient)" />
@@ -47,10 +47,10 @@ export default function Logo({ size = 'default', showText = true, className = ''
       {/* Text */}
       {showText && (
         <div className="hidden sm:block">
-          <div className={`${s.text} text-white font-bold leading-tight tracking-tight group-hover:text-gold transition-colors duration-300`}>
+          <div className={`${s.text} text-white font-bold leading-tight tracking-tight group-hover:text-gradient-gold transition-all duration-500`}>
             Oz Estimations
           </div>
-          <div className={`${s.sub} text-gold/80 font-semibold tracking-[0.2em] uppercase`}>
+          <div className={`${s.sub} text-gold/60 font-medium tracking-[0.25em] uppercase`}>
             Cost Estimation Experts
           </div>
         </div>

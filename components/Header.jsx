@@ -40,24 +40,26 @@ export default function Header() {
   return (
     <>
       {/* Top Banner */}
-      <div className="bg-navy-light border-b border-white/5 hidden md:block">
+      <div className="bg-gradient-to-r from-navy-dark via-navy-light to-navy-dark border-b border-white/5 hidden md:block">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-2 text-xs text-slate-custom">
           <div className="flex items-center gap-6">
-            <a href={`tel:${CONTACT.phone1}`} className="flex items-center gap-1 hover:text-gold transition-colors">
-              <HiPhone className="w-3 h-3" /> {CONTACT.phone1}
+            <a href={`tel:${CONTACT.phone1}`} className="flex items-center gap-1.5 hover:text-gold transition-colors">
+              <HiPhone className="w-3 h-3 text-gold/60" /> {CONTACT.phone1}
             </a>
-            <a href={`mailto:${CONTACT.email}`} className="flex items-center gap-1 hover:text-gold transition-colors">
-              <HiEnvelope className="w-3 h-3" /> {CONTACT.email}
+            <a href={`mailto:${CONTACT.email}`} className="flex items-center gap-1.5 hover:text-gold transition-colors">
+              <HiEnvelope className="w-3 h-3 text-gold/60" /> {CONTACT.email}
             </a>
           </div>
-          <div className="text-gold font-medium">Professional Construction Cost Estimation Services</div>
+          <div className="shimmer-text font-semibold tracking-wide">Professional Construction Cost Estimation Services</div>
         </div>
       </div>
 
       {/* Main Header */}
       <header
-        className={`sticky top-0 z-50 transition-all duration-300 ${
-          scrolled ? 'bg-navy/95 backdrop-blur-lg shadow-lg shadow-black/20' : 'bg-navy/80 backdrop-blur-sm'
+        className={`sticky top-0 z-50 transition-all duration-500 ${
+          scrolled 
+            ? 'bg-navy/80 backdrop-blur-2xl shadow-2xl shadow-black/30 border-b border-white/[0.06]' 
+            : 'bg-navy/40 backdrop-blur-md'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -94,7 +96,7 @@ export default function Header() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 10 }}
                         transition={{ duration: 0.2 }}
-                        className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-navy-light border border-white/10 rounded-2xl shadow-2xl shadow-black/40 p-6 min-w-[700px] z-50"
+                        className="absolute top-full left-1/2 -translate-x-1/2 mt-2 glass rounded-2xl shadow-2xl shadow-black/50 p-6 min-w-[700px] z-50 border-gradient"
                         onMouseEnter={() => handleMouseEnter(item.label)}
                         onMouseLeave={handleMouseLeave}
                       >
@@ -135,7 +137,7 @@ export default function Header() {
             <div className="flex items-center gap-3">
               <Link
                 href="/get-estimation"
-                className="hidden md:inline-flex items-center gap-2 bg-gold text-navy font-semibold text-sm px-5 py-2.5 rounded-lg hover:bg-amber transition-all hover:scale-105"
+                className="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-gold to-amber text-navy font-bold text-sm px-6 py-2.5 rounded-xl hover:from-amber hover:to-gold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/25 shimmer-btn"
               >
                 Get Free Quote
               </Link>

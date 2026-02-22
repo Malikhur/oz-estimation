@@ -33,7 +33,7 @@ export default function MobileMenu({ isOpen, onClose }) {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-            className="absolute right-0 top-0 bottom-0 w-[85%] max-w-sm bg-navy border-l border-white/10 overflow-y-auto"
+            className="absolute right-0 top-0 bottom-0 w-[85%] max-w-sm bg-navy/95 backdrop-blur-2xl border-l border-white/[0.06] overflow-y-auto"
           >
             <div className="p-6 pt-20">
               {navigation.map((item, i) => (
@@ -109,11 +109,11 @@ export default function MobileMenu({ isOpen, onClose }) {
                   )}
                 </motion.div>
               ))}
-              <div className="mt-6 pt-6 border-t border-white/10">
+              <div className="mt-8 pt-6 border-t border-white/[0.06]">
                 <Link
                   href="/get-estimation"
                   onClick={onClose}
-                  className="block w-full text-center bg-gold text-navy font-semibold py-3 rounded-xl hover:bg-amber transition-colors"
+                  className="block w-full text-center bg-gradient-to-r from-gold to-amber text-navy font-bold py-3.5 rounded-xl hover:from-amber hover:to-gold transition-all shimmer-btn"
                 >
                   Get Free Quote
                 </Link>

@@ -24,48 +24,48 @@ export default function QuoteForm() {
 
   return (
     <AnimatedSection>
-      <form onSubmit={handleSubmit} className="space-y-5">
+      <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-slate-custom mb-2">Your Name *</label>
+            <label htmlFor="name" className="block text-sm font-medium text-slate-custom mb-2.5">Your Name *</label>
             <input
               id="name" name="name" type="text" required value={formData.name} onChange={handleChange}
-              className="w-full bg-navy border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-custom/50 focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-all text-sm md:text-base"
+              className="w-full bg-white/[0.03] border border-white/[0.08] rounded-xl px-4 py-3.5 text-white placeholder-slate-custom/40 focus:border-gold/50 focus:ring-1 focus:ring-gold/30 focus:bg-white/[0.05] outline-none transition-all text-sm md:text-base backdrop-blur-sm"
               placeholder="John Doe"
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-slate-custom mb-2">Your Email *</label>
+            <label htmlFor="email" className="block text-sm font-medium text-slate-custom mb-2.5">Your Email *</label>
             <input
               id="email" name="email" type="email" required value={formData.email} onChange={handleChange}
-              className="w-full bg-navy border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-custom/50 focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-all text-sm md:text-base"
+              className="w-full bg-white/[0.03] border border-white/[0.08] rounded-xl px-4 py-3.5 text-white placeholder-slate-custom/40 focus:border-gold/50 focus:ring-1 focus:ring-gold/30 focus:bg-white/[0.05] outline-none transition-all text-sm md:text-base backdrop-blur-sm"
               placeholder="john@company.com"
             />
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-slate-custom mb-2">Phone Number *</label>
+            <label htmlFor="phone" className="block text-sm font-medium text-slate-custom mb-2.5">Phone Number *</label>
             <input
               id="phone" name="phone" type="tel" required value={formData.phone} onChange={handleChange}
-              className="w-full bg-navy border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-custom/50 focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-all text-sm md:text-base"
+              className="w-full bg-white/[0.03] border border-white/[0.08] rounded-xl px-4 py-3.5 text-white placeholder-slate-custom/40 focus:border-gold/50 focus:ring-1 focus:ring-gold/30 focus:bg-white/[0.05] outline-none transition-all text-sm md:text-base backdrop-blur-sm"
               placeholder="+1 (555) 000-0000"
             />
           </div>
           <div>
-            <label htmlFor="subject" className="block text-sm font-medium text-slate-custom mb-2">Subject</label>
+            <label htmlFor="subject" className="block text-sm font-medium text-slate-custom mb-2.5">Subject</label>
             <input
               id="subject" name="subject" type="text" value={formData.subject} onChange={handleChange}
-              className="w-full bg-navy border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-custom/50 focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-all text-sm md:text-base"
+              className="w-full bg-white/[0.03] border border-white/[0.08] rounded-xl px-4 py-3.5 text-white placeholder-slate-custom/40 focus:border-gold/50 focus:ring-1 focus:ring-gold/30 focus:bg-white/[0.05] outline-none transition-all text-sm md:text-base backdrop-blur-sm"
               placeholder="Project Type"
             />
           </div>
         </div>
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-slate-custom mb-2">Message</label>
+          <label htmlFor="message" className="block text-sm font-medium text-slate-custom mb-2.5">Message</label>
           <textarea
             id="message" name="message" rows={4} value={formData.message} onChange={handleChange}
-            className="w-full bg-navy border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-custom/50 focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-all resize-none text-sm md:text-base"
+            className="w-full bg-white/[0.03] border border-white/[0.08] rounded-xl px-4 py-3.5 text-white placeholder-slate-custom/40 focus:border-gold/50 focus:ring-1 focus:ring-gold/30 focus:bg-white/[0.05] outline-none transition-all resize-none text-sm md:text-base backdrop-blur-sm"
             placeholder="Tell us about your project..."
           />
         </div>

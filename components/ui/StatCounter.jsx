@@ -35,11 +35,11 @@ export default function StatCounter({ value, suffix = '', label }) {
   }, [isInView, value, shouldReduceMotion]);
 
   return (
-    <div ref={ref} className="text-center p-6">
-      <div className="text-4xl md:text-5xl font-bold text-gold mb-2">
+    <div ref={ref} className="text-center p-6 md:p-8">
+      <div className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 text-gradient-gold drop-shadow-[0_0_20px_rgba(212,168,67,0.2)]">
         {count}{suffix}
       </div>
-      <div className="text-slate-custom text-sm md:text-base">{label}</div>
+      <div className="text-slate-custom text-sm md:text-base font-medium">{label}</div>
     </div>
   );
 }

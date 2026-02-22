@@ -23,10 +23,10 @@ export default function AnimatedSection({ children, className = '', delay = 0, d
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, ...dir }}
-      whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.6, delay, ease: 'easeOut' }}
+      initial={{ opacity: 0, filter: 'blur(8px)', ...dir }}
+      whileInView={{ opacity: 1, filter: 'blur(0px)', x: 0, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.7, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
       className={className}
     >
       {children}
