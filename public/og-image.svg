@@ -1,0 +1,55 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0A1628"/>
+  <rect width="1200" height="630" fill="url(#bg-grad)" opacity="0.6"/>
+  
+  <!-- Top gold accent -->
+  <rect width="1200" height="6" fill="url(#gold-line)"/>
+  
+  <!-- Logo icon -->
+  <rect x="430" y="140" width="70" height="70" rx="16" fill="url(#logo-grad)"/>
+  <text x="465" y="186" text-anchor="middle" fill="#0A1628" font-family="system-ui,sans-serif" font-weight="800" font-size="30">OZ</text>
+  
+  <!-- Company name -->
+  <text x="515" y="170" fill="#FFFFFF" font-family="system-ui,sans-serif" font-weight="800" font-size="42" letter-spacing="-1">Oz Estimations</text>
+  <text x="515" y="195" fill="#D4A843" font-family="system-ui,sans-serif" font-weight="600" font-size="14" letter-spacing="4">COST ESTIMATION EXPERTS</text>
+  
+  <!-- Tagline -->
+  <text x="600" y="290" text-anchor="middle" fill="#94A3B8" font-family="system-ui,sans-serif" font-weight="400" font-size="22">Professional Construction Cost Estimation Services</text>
+  <text x="600" y="325" text-anchor="middle" fill="#94A3B8" font-family="system-ui,sans-serif" font-weight="400" font-size="22">for Residential, Commercial &amp; Industrial Projects</text>
+  
+  <!-- Stats -->
+  <text x="200" y="430" text-anchor="middle" fill="#D4A843" font-family="system-ui,sans-serif" font-weight="800" font-size="36">5,000+</text>
+  <text x="200" y="458" text-anchor="middle" fill="#94A3B8" font-family="system-ui,sans-serif" font-weight="400" font-size="14">Projects</text>
+  
+  <text x="440" y="430" text-anchor="middle" fill="#D4A843" font-family="system-ui,sans-serif" font-weight="800" font-size="36">98%</text>
+  <text x="440" y="458" text-anchor="middle" fill="#94A3B8" font-family="system-ui,sans-serif" font-weight="400" font-size="14">Accuracy</text>
+  
+  <text x="680" y="430" text-anchor="middle" fill="#D4A843" font-family="system-ui,sans-serif" font-weight="800" font-size="36">50</text>
+  <text x="680" y="458" text-anchor="middle" fill="#94A3B8" font-family="system-ui,sans-serif" font-weight="400" font-size="14">States</text>
+  
+  <text x="920" y="430" text-anchor="middle" fill="#D4A843" font-family="system-ui,sans-serif" font-weight="800" font-size="36">24hr</text>
+  <text x="920" y="458" text-anchor="middle" fill="#94A3B8" font-family="system-ui,sans-serif" font-weight="400" font-size="14">Turnaround</text>
+  
+  <!-- Bottom domain -->
+  <text x="600" y="570" text-anchor="middle" fill="#94A3B8" font-family="system-ui,sans-serif" font-weight="400" font-size="16">ozestimations.com</text>
+  
+  <!-- Bottom gold line -->
+  <rect y="624" width="1200" height="6" fill="url(#gold-line)"/>
+  
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#132039"/>
+      <stop offset="100%" stop-color="#0A1628"/>
+    </linearGradient>
+    <linearGradient id="gold-line" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#B8922E"/>
+      <stop offset="50%" stop-color="#F5A623"/>
+      <stop offset="100%" stop-color="#B8922E"/>
+    </linearGradient>
+    <linearGradient id="logo-grad" x1="430" y1="140" x2="500" y2="210">
+      <stop offset="0%" stop-color="#F5A623"/>
+      <stop offset="100%" stop-color="#D4A843"/>
+    </linearGradient>
+  </defs>
+</svg>

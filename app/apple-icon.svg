@@ -1,0 +1,9 @@
+<svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" rx="40" fill="#D4A843"/>
+  <path d="M45 132V66L66 54V132" stroke="#0A1628" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
+  <path d="M66 132V48L90 36V132" stroke="#0A1628" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
+  <path d="M90 132V48L114 54V132" stroke="#0A1628" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
+  <path d="M114 132V66L135 78V132" stroke="#0A1628" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
+  <text x="90" y="110" text-anchor="middle" fill="#0A1628" font-family="system-ui,sans-serif" font-weight="800" font-size="72" letter-spacing="-3">OZ</text>
+  <path d="M90 18L114 42H66L90 18Z" fill="#0A1628" opacity="0.15"/>
+</svg>

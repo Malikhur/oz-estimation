@@ -1,0 +1,16 @@
+{
+  "name": "Oz Estimations",
+  "short_name": "Oz Est",
+  "description": "Professional Construction Cost Estimation Services",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A1628",
+  "theme_color": "#D4A843",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
