@@ -6,12 +6,12 @@ import { HiOutlineMapPin } from 'react-icons/hi2';
 
 export default function AreaGrid() {
   return (
-    <section className="relative py-20 md:py-28 overflow-hidden">
+    <section className="relative py-12 md:py-16 overflow-hidden">
       {/* Ambient */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-gold/[0.02] rounded-full blur-[100px] pointer-events-none" />
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <AnimatedSection className="text-center mb-14">
+        <AnimatedSection className="text-center mb-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6 text-xs font-semibold tracking-wide uppercase bg-gold/10 text-gold border border-gold/20">
             <span className="w-1.5 h-1.5 bg-gold rounded-full animate-pulse" />
             Nationwide Coverage

@@ -1,0 +1,6 @@
+<svg viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="40" rx="6" fill="#1A2332"/>
+  <polygon points="18,12 24,28 12,28" fill="#0078D4"/>
+  <polygon points="18,12 22,22 14,22" fill="#29B6F6"/>
+  <text x="30" y="25" fill="#E2E8F0" font-family="system-ui,sans-serif" font-weight="700" font-size="13">Trimble</text>
+</svg>

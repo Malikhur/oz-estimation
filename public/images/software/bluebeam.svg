@@ -1,0 +1,5 @@
+<svg viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="40" rx="6" fill="#1A2332"/>
+  <path d="M12 12h6l4 8-4 8h-6l4-8-4-8z" fill="#0078D4"/>
+  <text x="30" y="25" fill="#E2E8F0" font-family="system-ui,sans-serif" font-weight="700" font-size="13">Bluebeam</text>
+</svg>

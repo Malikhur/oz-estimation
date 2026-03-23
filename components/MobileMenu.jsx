@@ -16,7 +16,7 @@ export default function MobileMenu({ isOpen, onClose }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-40 lg:hidden"
+          className="fixed inset-0 z-[60] lg:hidden"
         >
           {/* Backdrop */}
           <motion.div

@@ -4,7 +4,7 @@ import AnimatedSection from './AnimatedSection';
 
 export default function SectionHeading({ title, subtitle, centered = true, light = false, badge }) {
   return (
-    <AnimatedSection className={`mb-12 md:mb-16 ${centered ? 'text-center' : ''}`}>
+    <AnimatedSection className={`mb-8 md:mb-10 ${centered ? 'text-center' : ''}`}>
       {badge && (
         <div className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6 text-xs font-semibold tracking-wide uppercase ${
           light ? 'bg-gold/10 text-gold border border-gold/20' : 'bg-gold/10 text-gold border border-gold/20'

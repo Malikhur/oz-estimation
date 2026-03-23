@@ -4,7 +4,7 @@ import { HiArrowRight } from 'react-icons/hi2';
 
 export default function CTABanner({ title = 'Ready to Get Started?', subtitle = 'Get a detailed, accurate estimate for your construction project today.', buttonText = 'Get Free Estimation', buttonHref = '/get-estimation' }) {
   return (
-    <section className="relative py-20 md:py-28 overflow-hidden">
+    <section className="relative py-12 md:py-16 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-r from-navy-dark via-navy-light to-navy-dark" />
       

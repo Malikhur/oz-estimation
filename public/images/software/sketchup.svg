@@ -1,0 +1,6 @@
+<svg viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="40" rx="6" fill="#1A2332"/>
+  <polygon points="18,12 26,16 26,28 18,24 10,28 10,16" fill="#E53935"/>
+  <polygon points="18,12 26,16 18,20 10,16" fill="#EF5350"/>
+  <text x="32" y="25" fill="#E2E8F0" font-family="system-ui,sans-serif" font-weight="700" font-size="11">SketchUp</text>
+</svg>

@@ -1,78 +1,78 @@
 // Construction & estimation images using Pexels (always reliable)
 // Format: https://images.pexels.com/photos/{ID}/pexels-photo-{ID}.jpeg
+// RULE: Every image ID is used ONLY ONCE across the entire site.
 
-const px = (id, w = 800, h = 600) =>
-  `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w}&h=${h}&fit=crop`;
+const px = (id, w = 1200, h = 800) =>
+  `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w}&h=${h}&fit=crop&dpr=2`;
 
 export const heroImages = {
   home: px(2219024, 1920, 1080),       // construction workers at site
   about: px(1216589, 1920, 1080),       // construction crane sunset
-  services: px(159306, 1920, 1080),     // modern building architecture
+  services: px(1109541, 1920, 1080),    // modern building architecture
   contact: px(323780, 1920, 1080),      // modern skyscraper
   faqs: px(585419, 1920, 1080),         // office workspace
 };
 
 export const serviceImages = {
-  'general-estimation': px(416405),      // laptop with documents/planning
-  'sitework-demolition': px(2219024),    // heavy construction machinery
-  'mep': px(257736),                     // industrial pipes/mechanical
-  'structural-trade': px(2138126),       // steel framework construction
-  'building-envelope': px(2098624),      // house roofing/exterior
-  'interior-finishes': px(1571460),      // interior room finishing
-  'specialty-landscaping': px(1301856),  // landscaped garden
-  '3d-rendering': px(323780),           // modern architecture
-  'xactimate-estimation': px(3760529),   // house renovation/insurance
+  'general-estimation': px(416405, 1200, 800),      // laptop with documents/planning
+  'sitework-demolition': px(1463917, 1200, 800),    // heavy construction machinery
+  'mep': px(257736, 1200, 800),                     // industrial pipes/mechanical
+  'structural-trade': px(2138126, 1200, 800),       // steel framework construction
+  'building-envelope': px(2098624, 1200, 800),      // house roofing/exterior
+  'interior-finishes': px(1571460, 1200, 800),      // interior room finishing
+  'specialty-landscaping': px(1301856, 1200, 800),  // landscaped garden
+  '3d-rendering': px(3935333, 1200, 800),           // modern 3d architecture
 };
 
 export const subServiceImages = {
   // General Estimation
-  'subcontractor-estimation': px(585419),          // office/planning work
-  'general-contractor-estimation': px(2219024),    // construction overview
-  'supplier-manufacturer-estimation': px(1216589), // construction materials
-  'public-contractor-estimating': px(159306),      // government building
-  'residential-estimation': px(106399),            // residential house
-  'commercial-services': px(323780),               // commercial building
-  'industrial-estimation': px(257736),             // industrial facility
+  'subcontractor-estimation': px(271667),            // subcontractor at work
+  'general-contractor-estimation': px(2343465),      // construction project overview
+  'supplier-manufacturer-estimation': px(259962),    // building materials supply
+  'public-contractor-estimating': px(439416),        // government/public building
+  'residential-estimation': px(106399),              // residential house
+  'commercial-services': px(2768961),                // commercial office building
+  'industrial-estimation': px(4792493),              // industrial warehouse
   // Sitework & Demolition
-  'demolition-estimation': px(2138126),            // demolition/heavy machinery
-  'earthwork-excavation-estimation': px(1216589),  // earthwork/excavation
-  'site-preparation-estimation': px(2219024),      // site preparation
+  'demolition-estimation': px(4513940),              // demolition site
+  'earthwork-excavation-estimation': px(2343468),    // earthwork/excavation machinery
+  'site-preparation-estimation': px(259588),         // crane at construction site
   // MEP
-  'plumbing-estimation': px(1078884),              // plumbing pipes
-  'mechanical-estimation': px(257736),             // mechanical systems
-  'electrical-estimation': px(1036936),            // electrical work
-  'complete-mep-estimation': px(585419),           // MEP planning
+  'plumbing-estimation': px(1078884),                // plumbing pipes
+  'mechanical-estimation': px(3616764),              // mechanical/industrial pipes
+  'electrical-estimation': px(1036936),              // electrical work
+  'complete-mep-estimation': px(209190),             // engineering blueprints
   // Structural Trades
-  'concrete-estimation': px(2138126),              // concrete/steel framework
-  'masonry-estimation': px(2098624),               // brick/masonry work
-  'structural-steel-estimation': px(1216589),      // steel structure
-  'framing-estimation': px(2219024),               // wood framing
-  'carpentry-estimation': px(1571460),             // carpentry/woodwork
+  'concrete-estimation': px(2898199),                // concrete pouring
+  'masonry-estimation': px(2581922),                 // brick/masonry work
+  'structural-steel-estimation': px(3637837),        // steel skyscraper frame
+  'framing-estimation': px(5506133),                 // wooden frame structure
+  'carpentry-estimation': px(5698027),               // carpentry tools & woodwork
   // Building Envelope
-  'roofing-estimation': px(2098624),               // roofing work
-  'exterior-finishes-estimation': px(323780),      // building exterior
-  'insulation-estimation': px(3760529),            // insulation work
-  'gutter-estimation-services': px(2098624),       // gutter/roof edge
+  'roofing-estimation': px(5490778),                 // roofing work
+  'exterior-finishes-estimation': px(2102587),       // building exterior facade
+  'insulation-estimation': px(3760529),              // insulation work
+  'gutter-estimation-services': px(3771099),         // house roof & gutter
   // Interior Finishes
-  'drywall-estimation': px(1571460),               // interior walls
-  'painting-estimation': px(1301856),              // painting/color
-  'flooring-estimation': px(1571460),              // flooring interior
-  'furnishing-estimation': px(1571460),            // furnished room
+  'drywall-estimation': px(534220),                  // interior wall finishing
+  'painting-estimation': px(3797517),                // painting & roller
+  'flooring-estimation': px(2251247),                // interior flooring
+  'furnishing-estimation': px(2582818),              // furnished room interior
   // Specialty & Landscaping
-  'specialty-trades-estimation': px(585419),       // specialty work
-  'landscaping-estimation': px(1301856),           // landscaping
+  'specialty-trades-estimation': px(208736),         // specialty tools
+  'landscaping-estimation': px(1544420),             // landscape garden
   // 3D Rendering
-  'still-rendering': px(323780),                   // architectural 3D
-  '360-tours': px(159306),                         // panoramic view
-  '3d-flythrough': px(323780),                     // 3D architecture
-  'video-rendering': px(159306),                   // video/animation
-  'product-visualization': px(323780),             // product viz
+  'still-rendering': px(5997967),                    // architectural 3D render
+  '360-tours': px(3184339),                          // panoramic view
+  '3d-flythrough': px(8961438),                      // modern 3D architecture
+  'video-rendering': px(2760243),                    // cinematic architecture
+  'product-visualization': px(2046432),              // product visualization
 };
 
 export const aboutImages = {
-  team: px(3184291, 800, 600),          // team collaboration
-  office: px(585419, 800, 600),         // modern office
-  mission: px(2219024, 800, 600),       // construction site
+  team: px(3184291, 1200, 800),          // team collaboration
+  office: px(3773023, 1200, 800),        // architect at work
+  mission: px(2219028, 1200, 800),       // construction site mission
 };
 
 export const testimonialImages = {

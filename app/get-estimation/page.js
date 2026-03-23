@@ -10,11 +10,11 @@ import { HiOutlinePhone, HiOutlineEnvelope, HiOutlineMapPin, HiOutlineClock } fr
 
 export const metadata = {
   title: 'Get Free Estimation — Request Your Construction Cost Quote',
-  description: 'Request a free, accurate construction cost estimation from Oz Estimations. Upload your plans and get a detailed quote within 24-48 hours. No obligation, 98% accuracy guaranteed.',
+  description: 'Request a free, accurate construction cost estimation from OZ Estimation. Upload your plans and get a detailed quote within 24-48 hours. No obligation, 98% accuracy guaranteed.',
   keywords: ['free construction estimate', 'get cost estimation', 'construction quote', 'free bid estimate', 'upload plans', 'request quote'],
   alternates: { canonical: 'https://ozestimations.com/get-estimation' },
   openGraph: {
-    title: 'Get Free Estimation | Oz Estimations',
+    title: 'Get Free Estimation | OZ Estimation',
     description: 'Upload your plans and get a free, detailed construction cost estimation in 24-48 hours.',
     url: 'https://ozestimations.com/get-estimation',
   },
@@ -24,16 +24,16 @@ export default function GetEstimationPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
+      <section className="relative min-h-[55vh] md:min-h-[60vh] py-14 md:py-20 flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <Image src={heroImages.contact} alt="Get estimation" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0 bg-navy/85" />
-          <div className="absolute inset-0 bg-gradient-to-b from-navy-light/50 to-navy" />
+          <Image src={heroImages.contact} alt="Get estimation" fill className="object-cover object-[center_35%]" sizes="100vw" quality={90} />
+          <div className="absolute inset-0 bg-navy/55" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/30 to-navy/80" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb />
           <AnimatedSection className="mt-8 max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               Get Your <span className="text-gold">Free Estimation</span>
             </h1>
             <p className="text-slate-custom text-base md:text-lg leading-relaxed">
@@ -44,7 +44,7 @@ export default function GetEstimationPage() {
       </section>
 
       {/* Form + Contact */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Form */}

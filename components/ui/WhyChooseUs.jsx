@@ -15,18 +15,18 @@ const iconMap = {
 
 export default function WhyChooseUs({ light = false }) {
   return (
-    <section className={`relative py-20 md:py-28 overflow-hidden ${light ? 'bg-light' : ''}`}>
+    <section className={`relative py-12 md:py-16 overflow-hidden ${light ? 'bg-light' : ''}`}>
       {/* Ambient orb */}
       {!light && <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold/[0.03] rounded-full blur-[120px] pointer-events-none" />}
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <AnimatedSection className="text-center mb-14">
+        <AnimatedSection className="text-center mb-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6 text-xs font-semibold tracking-wide uppercase bg-gold/10 text-gold border border-gold/20">
             <span className="w-1.5 h-1.5 bg-gold rounded-full animate-pulse" />
             Our Advantages
           </div>
           <h2 className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-5 tracking-tight ${light ? 'text-navy' : 'text-white'}`}>
-            Why Choose Oz Estimations?
+            Why Choose OZ Estimation?
           </h2>
           <p className={`max-w-2xl mx-auto text-base md:text-lg ${light ? 'text-navy/70' : 'text-slate-custom'}`}>
             We deliver precise, reliable cost estimations that help you win more bids and complete projects on budget.

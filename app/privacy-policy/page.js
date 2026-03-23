@@ -3,7 +3,7 @@ import Breadcrumb from '@/components/ui/Breadcrumb';
 
 export const metadata = {
   title: 'Privacy Policy',
-  description: 'Read the Oz Estimations privacy policy to understand how we collect, use, and protect your personal information.',
+  description: 'Read the OZ Estimation privacy policy to understand how we collect, use, and protect your personal information.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -42,29 +42,29 @@ export default function PrivacyPolicyPage() {
     },
     {
       title: 'Contact Us',
-      content: 'If you have questions about this privacy policy or our data practices, please contact us at info@ozestimations.com or call +1 (555) 123-4567. You can also write to us at 123 Construction Ave, Suite 200, Dallas, TX 75001.',
+      content: 'If you have questions about this privacy policy or our data practices, please contact us at info@ozestimations.com or call +1 (555) 123-4567. You can also write to us at 425 W 11th St, 2nd Floor, Los Angeles, CA 90015.',
     },
   ];
 
   return (
     <>
       {/* Hero */}
-      <section className="relative py-20 md:py-28 bg-gradient-to-b from-navy-light to-navy">
+      <section className="relative py-14 md:py-20 bg-gradient-to-b from-navy-light to-navy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb />
           <AnimatedSection className="mt-8 max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               Privacy <span className="text-gold">Policy</span>
             </h1>
             <p className="text-slate-custom text-base md:text-lg leading-relaxed">
-              Last updated: January 2025. This policy describes how Oz Estimations collects, uses, and protects your information.
+              Last updated: January 2025. This policy describes how OZ Estimation collects, uses, and protects your information.
             </p>
           </AnimatedSection>
         </div>
       </section>
 
       {/* Content */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-10">
             {sections.map((section, i) => (

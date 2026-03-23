@@ -13,7 +13,7 @@ export const metadata = {
   keywords: ['construction estimation FAQ', 'estimation questions', 'cost estimation help', 'how estimation works', 'estimation pricing'],
   alternates: { canonical: 'https://ozestimations.com/faqs' },
   openGraph: {
-    title: 'FAQs | Oz Estimations',
+    title: 'FAQs | OZ Estimation',
     description: 'Get answers to common questions about construction cost estimation services, process, and pricing.',
     url: 'https://ozestimations.com/faqs',
   },
@@ -41,16 +41,16 @@ export default function FAQsPage() {
       />
 
       {/* Hero */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
+      <section className="relative min-h-[55vh] md:min-h-[60vh] py-14 md:py-20 flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <Image src={heroImages.faqs} alt="FAQs" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0 bg-navy/85" />
-          <div className="absolute inset-0 bg-gradient-to-b from-navy-light/50 to-navy" />
+          <Image src={heroImages.faqs} alt="FAQs" fill className="object-cover object-[center_35%]" sizes="100vw" quality={90} />
+          <div className="absolute inset-0 bg-navy/55" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/30 to-navy/80" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb />
           <AnimatedSection className="mt-8 max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               Frequently Asked <span className="text-gold">Questions</span>
             </h1>
             <p className="text-slate-custom text-base md:text-lg leading-relaxed">
@@ -61,7 +61,7 @@ export default function FAQsPage() {
       </section>
 
       {/* FAQs */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading title="General Questions" subtitle="Common questions about our estimation services." />
           <div>

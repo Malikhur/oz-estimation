@@ -36,7 +36,7 @@ export async function generateMetadata({ params }) {
     ],
     alternates: { canonical: `https://ozestimations.com/services/${category}/${service}` },
     openGraph: {
-      title: `${s.title} | Oz Estimations`,
+      title: `${s.title} | OZ Estimation`,
       description: s.description,
       url: `https://ozestimations.com/services/${category}/${service}`,
     },
@@ -58,7 +58,7 @@ export default async function ServicePage({ params }) {
     description: s.description,
     provider: {
       '@type': 'Organization',
-      name: 'Oz Estimations',
+      name: 'OZ Estimation',
       url: 'https://ozestimations.com',
     },
     areaServed: { '@type': 'Country', name: 'United States' },
@@ -88,11 +88,11 @@ export default async function ServicePage({ params }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Hero */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
+      <section className="relative min-h-[60vh] md:min-h-[65vh] py-14 md:py-20 flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <Image src={subServiceImages[service] || subServiceImages['subcontractor-estimation']} alt={s.title} fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0 bg-navy/85" />
-          <div className="absolute inset-0 bg-gradient-to-b from-navy-light/50 to-navy" />
+          <Image src={subServiceImages[service] || subServiceImages['subcontractor-estimation']} alt={s.title} fill className="object-cover object-[center_35%]" sizes="100vw" quality={90} />
+          <div className="absolute inset-0 bg-navy/55" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/30 to-navy/80" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb />
@@ -101,7 +101,7 @@ export default async function ServicePage({ params }) {
               <Link href={`/services/${category}`} className="hover:text-amber transition-colors">{cat.title}</Link>
               <span>/</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               {s.title.split(' ').slice(0, -1).join(' ')}{' '}
               <span className="text-gold">{s.title.split(' ').slice(-1)}</span>
             </h1>
@@ -111,7 +111,7 @@ export default async function ServicePage({ params }) {
       </section>
 
       {/* Content */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
@@ -119,7 +119,7 @@ export default async function ServicePage({ params }) {
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">Service Overview</h2>
                 <p className="text-slate-custom leading-relaxed mb-6">{s.longDescription}</p>
                 <p className="text-slate-custom leading-relaxed mb-6">
-                  At Oz Estimations, our team of experienced professionals uses the latest software tools and industry best practices to deliver comprehensive {s.title.toLowerCase()} that meet the highest standards of accuracy and detail. Whether you need a quick preliminary estimate or a full detailed takeoff, we have the expertise to help.
+                  At OZ Estimation, our team of experienced professionals uses the latest software tools and industry best practices to deliver comprehensive {s.title.toLowerCase()} that meet the highest standards of accuracy and detail. Whether you need a quick preliminary estimate or a full detailed takeoff, we have the expertise to help.
                 </p>
                 <p className="text-slate-custom leading-relaxed">
                   Our estimates include detailed material quantities, labor costs, equipment requirements, and all associated expenses to ensure your bids are competitive and your projects stay on budget.

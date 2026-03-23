@@ -11,7 +11,7 @@ export default function Logo({ size = 'default', showText = true, className = ''
   const s = sizes[size] || sizes.default;
 
   return (
-    <Link href="/" className={`flex items-center gap-3 group ${className}`} aria-label="Oz Estimations - Home">
+    <Link href="/" className={`flex items-center gap-3 group ${className}`} aria-label="OZ Estimation - Home">
       {/* Icon Mark */}
       <div className={`${s.icon} relative flex-shrink-0 group-hover:drop-shadow-[0_0_12px_rgba(212,168,67,0.4)] transition-all duration-500`}>
         <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full group-hover:scale-110 transition-transform duration-500">
@@ -48,7 +48,7 @@ export default function Logo({ size = 'default', showText = true, className = ''
       {showText && (
         <div className="hidden sm:block">
           <div className={`${s.text} text-white font-bold leading-tight tracking-tight group-hover:text-gradient-gold transition-all duration-500`}>
-            Oz Estimations
+            OZ Estimation
           </div>
           <div className={`${s.sub} text-gold/60 font-medium tracking-[0.25em] uppercase`}>
             Cost Estimation Experts

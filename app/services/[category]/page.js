@@ -33,7 +33,7 @@ export async function generateMetadata({ params }) {
     ],
     alternates: { canonical: `https://ozestimations.com/services/${category}` },
     openGraph: {
-      title: `${cat.title} | Oz Estimations`,
+      title: `${cat.title} | OZ Estimation`,
       description: cat.description,
       url: `https://ozestimations.com/services/${category}`,
     },
@@ -54,7 +54,7 @@ export default async function CategoryPage({ params }) {
     description: cat.description,
     provider: {
       '@type': 'Organization',
-      name: 'Oz Estimations',
+      name: 'OZ Estimation',
       url: 'https://ozestimations.com',
     },
     areaServed: { '@type': 'Country', name: 'United States' },
@@ -87,16 +87,16 @@ export default async function CategoryPage({ params }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(categoryJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Hero */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
+      <section className="relative min-h-[60vh] md:min-h-[65vh] py-14 md:py-20 flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <Image src={serviceImages[category] || serviceImages['general-estimation']} alt={cat.title} fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0 bg-navy/85" />
-          <div className="absolute inset-0 bg-gradient-to-b from-navy-light/50 to-navy" />
+          <Image src={serviceImages[category] || serviceImages['general-estimation']} alt={cat.title} fill className="object-cover object-[center_35%]" sizes="100vw" quality={90} />
+          <div className="absolute inset-0 bg-navy/55" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/30 to-navy/80" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb />
           <AnimatedSection className="mt-8 max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               {cat.title.split(' ').slice(0, -1).join(' ')}{' '}
               <span className="text-gold">{cat.title.split(' ').slice(-1)}</span>
             </h1>
@@ -106,7 +106,7 @@ export default async function CategoryPage({ params }) {
       </section>
 
       {/* Long description + features */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <AnimatedSection>
@@ -134,7 +134,7 @@ export default async function CategoryPage({ params }) {
       </section>
 
       {/* Sub-services */}
-      <section className="py-16 md:py-24 bg-navy-light/50">
+      <section className="py-10 md:py-16 bg-navy-light/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             title="Our Services"
@@ -157,7 +157,7 @@ export default async function CategoryPage({ params }) {
 
       {/* FAQs */}
       {faqs.length > 0 && (
-        <section className="py-16 md:py-24">
+        <section className="py-10 md:py-16">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeading title="Frequently Asked Questions" subtitle={`Common questions about ${cat.title.toLowerCase()}.`} />
             {faqs.map((faq, i) => (

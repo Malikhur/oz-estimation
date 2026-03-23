@@ -14,13 +14,14 @@ export default function ServiceCard({ title, description, href, image, index = 0
       <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" style={{ background: 'linear-gradient(135deg, rgba(212,168,67,0.15) 0%, transparent 50%, rgba(212,168,67,0.1) 100%)' }} />
       
       {image && (
-        <div className="relative w-full h-48 sm:h-52 overflow-hidden">
+        <div className="relative w-full h-52 sm:h-56 md:h-60 overflow-hidden">
           <Image
             src={image}
             alt={title}
             fill
-            className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+            className="object-cover object-[center_35%] group-hover:scale-105 transition-transform duration-700 ease-out"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+            quality={85}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-navy-light via-navy-light/50 to-transparent" />
           {/* Gold accent line at bottom of image */}

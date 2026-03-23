@@ -12,12 +12,12 @@ import { HiOutlineBuildingOffice2, HiOutlineUserGroup, HiOutlineTrophy, HiOutlin
 
 export const metadata = {
   title: 'About Us — Expert Construction Cost Estimators',
-  description: 'Learn about Oz Estimations — a team of experienced construction cost estimators with 10+ years of experience delivering accurate, reliable estimations for 5,000+ projects across all 50 US states.',
-  keywords: ['about oz estimations', 'construction estimating company', 'estimating team', 'construction cost experts', 'who we are'],
+  description: 'Learn about OZ Estimation — a team of experienced construction cost estimators with 10+ years of experience delivering accurate, reliable estimations for 5,000+ projects across all 50 US states.',
+  keywords: ['about OZ Estimation', 'construction estimating company', 'estimating team', 'construction cost experts', 'who we are'],
   alternates: { canonical: 'https://ozestimations.com/about' },
   openGraph: {
-    title: 'About Us | Oz Estimations',
-    description: '10+ years experience. 5,000+ projects estimated. 98% accuracy. Meet the team behind Oz Estimations.',
+    title: 'About Us | OZ Estimation',
+    description: '10+ years experience. 5,000+ projects estimated. 98% accuracy. Meet the team behind OZ Estimation.',
     url: 'https://ozestimations.com/about',
   },
 };
@@ -26,17 +26,17 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
+      <section className="relative min-h-[55vh] md:min-h-[60vh] py-14 md:py-20 flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <Image src={heroImages.about} alt="About Oz Estimations" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0 bg-navy/85" />
-          <div className="absolute inset-0 bg-gradient-to-b from-navy-light/50 to-navy" />
+          <Image src={heroImages.about} alt="About OZ Estimation" fill className="object-cover object-[center_35%]" sizes="100vw" quality={90} />
+          <div className="absolute inset-0 bg-navy/55" />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/30 to-navy/80" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb />
           <AnimatedSection className="mt-8 max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              About <span className="text-gold">Oz Estimations</span>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              About <span className="text-gold">OZ Estimation</span>
             </h1>
             <p className="text-slate-custom text-base md:text-lg leading-relaxed">
               We are a team of dedicated construction cost estimation professionals committed to helping contractors, developers, and builders win more bids with precise, reliable estimates.
@@ -57,13 +57,13 @@ export default function AboutPage() {
       </section>
 
       {/* Mission */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
               <p className="text-slate-custom leading-relaxed mb-4">
-                At Oz Estimations, we believe every construction project deserves a precise, comprehensive cost estimate. Our mission is to empower contractors, builders, and developers with the financial clarity they need to bid confidently and execute projects successfully.
+                At OZ Estimation, we believe every construction project deserves a precise, comprehensive cost estimate. Our mission is to empower contractors, builders, and developers with the financial clarity they need to bid confidently and execute projects successfully.
               </p>
               <p className="text-slate-custom leading-relaxed mb-4">
                 Founded by industry professionals with decades of combined experience, we understand the challenges of construction bidding. Inaccurate estimates lead to lost bids, budget overruns, and project delays. That&apos;s why we leverage cutting-edge estimating software and proven methodologies to deliver estimates you can trust.
@@ -97,7 +97,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-16 md:py-24 bg-navy-light/50">
+      <section className="py-10 md:py-16 bg-navy-light/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             title="Our Core Values"

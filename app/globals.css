@@ -201,6 +201,20 @@ body {
   background: linear-gradient(90deg, transparent, rgba(212,168,67,0.3) 20%, rgba(212,168,67,0.3) 80%, transparent);
 }
 
+/* Infinite horizontal scroll animation */
+@keyframes scroll-x {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-x {
+  animation: scroll-x 30s linear infinite;
+}
+
+.animate-scroll-x:hover {
+  animation-play-state: paused;
+}
+
 /* Premium serif accent */
 .font-premium {
   font-style: italic;
