@@ -26,41 +26,41 @@ export const serviceImages = {
 
 export const subServiceImages = {
   // General Estimation
-  'subcontractor-estimation': px(271667),            // subcontractor at work
+  'subcontractor-estimation': px(834892),            // blueprints & planning documents
   'general-contractor-estimation': px(2343465),      // construction project overview
-  'supplier-manufacturer-estimation': px(259962),    // building materials supply
+  'supplier-manufacturer-estimation': px(1117452),   // building materials & lumber
   'public-contractor-estimating': px(439416),        // government/public building
   'residential-estimation': px(106399),              // residential house
   'commercial-services': px(2768961),                // commercial office building
-  'industrial-estimation': px(4792493),              // industrial warehouse
+  'industrial-estimation': px(1267338),              // industrial facility
   // Sitework & Demolition
-  'demolition-estimation': px(4513940),              // demolition site
-  'earthwork-excavation-estimation': px(2343468),    // earthwork/excavation machinery
+  'demolition-estimation': px(7218037),              // building demolition site
+  'earthwork-excavation-estimation': px(2343468),    // excavation machinery at work
   'site-preparation-estimation': px(259588),         // crane at construction site
   // MEP
-  'plumbing-estimation': px(1078884),                // plumbing pipes
-  'mechanical-estimation': px(3616764),              // mechanical/industrial pipes
-  'electrical-estimation': px(1036936),              // electrical work
-  'complete-mep-estimation': px(209190),             // engineering blueprints
+  'plumbing-estimation': px(6419128),                // plumber working on pipes
+  'mechanical-estimation': px(3616764),              // mechanical HVAC systems
+  'electrical-estimation': px(8005397),              // electrician wiring work
+  'complete-mep-estimation': px(257700),             // engineering systems & pipes
   // Structural Trades
-  'concrete-estimation': px(2898199),                // concrete pouring
-  'masonry-estimation': px(2581922),                 // brick/masonry work
-  'structural-steel-estimation': px(3637837),        // steel skyscraper frame
+  'concrete-estimation': px(2898199),                // concrete pouring/forms
+  'masonry-estimation': px(157811),                  // brick laying & masonry
+  'structural-steel-estimation': px(3637837),        // steel structure frame
   'framing-estimation': px(5506133),                 // wooden frame structure
-  'carpentry-estimation': px(5698027),               // carpentry tools & woodwork
+  'carpentry-estimation': px(1249611),               // carpenter with tools & wood
   // Building Envelope
-  'roofing-estimation': px(5490778),                 // roofing work
+  'roofing-estimation': px(8092437),                 // roofer working on shingles
   'exterior-finishes-estimation': px(2102587),       // building exterior facade
-  'insulation-estimation': px(3760529),              // insulation work
-  'gutter-estimation-services': px(3771099),         // house roof & gutter
+  'insulation-estimation': px(3760529),              // insulation material install
+  'gutter-estimation-services': px(3771099),         // house roof & gutter edge
   // Interior Finishes
-  'drywall-estimation': px(534220),                  // interior wall finishing
-  'painting-estimation': px(3797517),                // painting & roller
-  'flooring-estimation': px(2251247),                // interior flooring
-  'furnishing-estimation': px(2582818),              // furnished room interior
+  'drywall-estimation': px(5178058),                 // drywall sheets & taping
+  'painting-estimation': px(994164),                 // painter rolling wall paint
+  'flooring-estimation': px(1457842),                // hardwood floor installation
+  'furnishing-estimation': px(1643384),              // beautifully furnished room
   // Specialty & Landscaping
-  'specialty-trades-estimation': px(208736),         // specialty tools
-  'landscaping-estimation': px(1544420),             // landscape garden
+  'specialty-trades-estimation': px(3683041),        // specialty electrical/trade work
+  'landscaping-estimation': px(1005058),             // landscaped garden & lawn
   // 3D Rendering
   'still-rendering': px(5997967),                    // architectural 3D render
   '360-tours': px(3184339),                          // panoramic view
